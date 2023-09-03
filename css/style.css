@@ -58,28 +58,52 @@ header .installApp h4{
 }
 /* Main section */
 main{
-    width: 80%;
     height: 100vh;
-    /* margin-left: 20%;
-    padding-left: 40px; */
     background: linear-gradient(180deg, #222 0%, #1F1F1F 11.64%, #171717 25.66%, #161616 32.94%, #151515 35.98%, #131313 44.89%, #121212 55.22%, #121212 75.34%, #121212 85.45%, rgba(18, 18, 18, 0.00) 100%);
 }
 #featured {
-    width: 80%;
+    width: 77%;
+    margin-left: 20%;
+    padding-left: 40px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px; 
-    background-color: #121212; 
+    justify-content: space-around; 
+    /* background-color: #121212;  */
     color: white;
+}
+#featured .featured-profile{
+    width: 100%;
+    display: flex;
+    padding: 15px 0px 35px 0px;
+    justify-content: space-between;
+}
+#featured .featured-profile .buttons{
+    display: flex;
+    padding-left: 10px;
+    gap: 10px;
+}
+#featured .featured-profile .buttons img, #featured .featured-profile .profile img{
+    width: 30px;
+}
+#featured .featured-profile .profile{
+    display: flex;
+    gap: 5px;
+    margin-right: 10px;
+    width: fit-content;
+    align-items: center;
+    background-color: #000;
+    border-radius: 50px;
+}
+#featured h2{
+    padding-left: 25px;
 }
 #featured .playlistcards{
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-between; */
     padding: 20px;
-    background-color: #121212;
+    /* background-color: #121212; */
     color: white;
 }
 #featured .playlistcards .playlist-card {
