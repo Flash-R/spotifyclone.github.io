@@ -16,16 +16,20 @@ header {
     color: white;
 }
 
+header .logo{
+    margin-bottom: 10px;
+}
 header .logo img{
     width: 50%;
 }
 
-header .nav-links ul{
+
+header .nav-links ul, header .playlist ul{
     list-style-type: none;
     padding: 0px;
     text-transform: capitalize;
 }
-header .nav-links ul li{
+header .nav-links ul li, header .playlist ul li{
     padding: 1px 5px;
     border-radius: 5px;
 }
@@ -36,7 +40,7 @@ header .nav-links ul li:hover{
 header .nav-links ul .home{
     background-color: rgb(54, 54, 54);
 }
-header .nav-links ul li a{
+header .nav-links ul li a, header .playlist ul li a{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -44,8 +48,17 @@ header .nav-links ul li a{
     text-decoration: none;
     color: #fff;
 }
-header .nav-links ul li img{
+header .nav-links ul li img,header .playlist ul li img{
     width: 25px;
+}
+header .playlist{
+    margin-top: 15px;
+}
+header .playlist h4{
+    margin: 10px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 400;
 }
 header .header-image img{
     width: 100%;
