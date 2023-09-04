@@ -67,6 +67,7 @@ header .header-image img{
 /* Main section */
 main{
     background: linear-gradient(180deg, #222 0%, #1F1F1F 11.64%, #171717 25.66%, #161616 32.94%, #151515 35.98%, #131313 44.89%, #121212 55.22%, #121212 75.34%, #121212 85.45%, rgba(18, 18, 18, 0.00) 100%);
+    overflow-y: auto;
 }
 #playlistDetail{
     margin-left: 15%;
@@ -212,12 +213,10 @@ main{
     margin-bottom: 10px;
 }
 
-#playlistDetail .tracklist {
-    margin-top: 40px;
-    /* Add some styling for the tracklist here */
-}
+
 
 #playlistDetail .tracklist{
+    margin-top: 40px;
     margin-top: -30px;
     overflow-x: auto;
     padding: 20px 20px 0px 20px;
@@ -226,9 +225,14 @@ main{
 
 #playlistDetail .tracklist .buttons{
     display: flex;
-    gap: 20px;
+    gap: 5px;
     align-items: center;
     margin-bottom: 20px;
+}
+#playlistDetail .tracklist .buttons button{
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
 
 #playlistDetail .tracklist table{
